@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 资料整理与索引小记</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fafaf9;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans SC", "PingFang SC", sans-serif;
+      color: #1e1e1e;
+      line-height: 1.7;
+      padding: 2rem 1.5rem;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* 开场短句 —— 留白呼吸 */
+    .opener {
+      margin-bottom: 3rem;
+      letter-spacing: 0.02em;
+    }
+
+    .opener .sentence {
+      font-size: 1.6rem;
+      font-weight: 350;
+      color: #1e1e1e;
+      line-height: 1.5;
+      border-left: 3px solid #b3b3b3;
+      padding-left: 1.2rem;
+    }
+
+    .opener .sentence em {
+      font-style: normal;
+      color: #2b5f4d;
+      font-weight: 400;
+    }
+
+    /* 主标题 */
+    .main-title {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-top: 0.25rem;
+      margin-bottom: 2.2rem;
+      color: #1b1b1b;
+    }
+
+    /* 承接段落 */
+    .intro-text {
+      font-size: 1rem;
+      color: #2c2c2c;
+      margin-bottom: 2.8rem;
+    }
+
+    .intro-text a {
+      color: #2b5f4d;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      transition: color 0.2s;
+    }
+
+    .intro-text a:hover {
+      color: #0e3b2f;
+      text-decoration-color: #0e3b2f;
+    }
+
+    /* 特点列表 —— 卡片式，极简 */
+    .feature-list {
+      list-style: none;
+      margin-bottom: 3.2rem;
+    }
+
+    .feature-list li {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 1.2rem 1.4rem;
+      margin-bottom: 0.9rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.03);
+      border: 1px solid #eae9e6;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .feature-list li:hover {
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.02);
+      border-color: #d6d4cf;
+    }
+
+    .feature-list .label {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: #6b6b6b;
+      background: #f0eeeb;
+      padding: 0.1rem 0.7rem;
+      border-radius: 20px;
+      margin-bottom: 0.4rem;
+    }
+
+    .feature-list .desc {
+      font-size: 0.98rem;
+      color: #2a2a2a;
+      line-height: 1.6;
+    }
+
+    .feature-list .desc strong {
+      font-weight: 500;
+      color: #1f1f1f;
+    }
+
+    /* 温和结尾 */
+    .closing {
+      margin-top: 1.2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e2dfda;
+      font-size: 0.95rem;
+      color: #3e3e3e;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 1.2rem;
+      align-items: baseline;
+    }
+
+    .closing .tag {
+      font-size: 0.75rem;
+      background-color: #ebebe7;
+      padding: 0.15rem 0.7rem;
+      border-radius: 30px;
+      color: #5f5f5f;
+    }
+
+    .closing a {
+      color: #2b5f4d;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+    }
+
+    .closing a:hover {
+      color: #0e3b2f;
+    }
+
+    hr {
+      margin: 3.2rem 0 0.8rem;
+      border: none;
+      border-top: 1px solid #eae7e1;
+    }
+
+    /* 响应式 */
+    @media (max-width: 480px) {
+      body {
+        padding: 1.5rem 1rem;
+      }
+      .opener .sentence {
+        font-size: 1.3rem;
+        padding-left: 1rem;
+      }
+      .main-title {
+        font-size: 1.6rem;
+        margin-top: 0.1rem;
+        margin-bottom: 1.8rem;
+      }
+      .feature-list li {
+        padding: 1rem 1.1rem;
+      }
+      .closing {
+        font-size: 0.88rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem 0;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .opener .sentence {
+        font-size: 1.8rem;
+      }
+      .main-title {
+        font-size: 2.2rem;
+      }
+      .intro-text {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 开场短句 -->
+  <div class="opener">
+    <div class="sentence">
+      有些东西值得被好好整理，<br>比如那些陪伴过你的<em>游戏时光</em>。
+    </div>
+  </div>
+
+  <!-- 标题 -->
+  <h1 class="main-title">不只是收藏，更是索引</h1>
+
+  <!-- 承接段落 -->
+  <div class="intro-text">
+    <p>随手记下玩过的、想玩的、曾经错过的游戏，慢慢就攒成了一本私人目录。从老掌机到手机小游戏，从独立作品到经典系列——信息越堆越多，反倒更需要一个清爽的落脚点。<br>
+    <a href="https://homeapp-aiyouxi.com.cn">爱游戏</a> 正是这样一个地方：把散落的记忆和记录收拢在一起，按自己的节奏翻阅、标记，不必被算法推着走。</p>
+  </div>
+
+  <!-- 特点列表 -->
+  <ul class="feature-list">
+    <li>
+      <span class="label">整理</span>
+      <div class="desc"><strong>自定义分类</strong> · 按平台、类型、年份或心情归档，不预设框架，你自己说了算。</div>
+    </li>
+    <li>
+      <span class="label">索引</span>
+      <div class="desc"><strong>检索与回溯</strong> · 随手搜索、筛选，快速定位某一款游戏，比翻聊天记录和书签夹可靠得多。</div>
+    </li>
+    <li>
+      <span class="label">笔记</span>
+      <div class="desc"><strong>轻微记录</strong> · 简短写两句感受、通关状态或版本信息，不写小作文，只留关键线索。</div>
+    </li>
+    <li>
+      <span class="label">陪伴</span>
+      <div class="desc"><strong>不打扰的界面</strong> · 没有弹窗推荐、没有排行榜，只是一个安安静静属于你自己的小资料库。</div>
+    </li>
+  </ul>
+
+  <!-- 温和结尾 + 自然链接 -->
+  <div class="closing">
+    <span>从资料堆里打捞记忆，</span>
+    <span>为每段游戏经历留一个位置。</span>
+    <span class="tag">索引向</span>
+    <span>你随时可以回到 <a href="https://homeapp-aiyouxi.com.cn">爱游戏</a>，继续整理下一段。</span>
+  </div>
+
+  <!-- 小分隔（仅装饰） -->
+  <hr>
+
+  <!-- 末行：简单署名感，无链接文本违规 -->
+  <div style="font-size:0.8rem; color:#9a9a9a; margin-top:0.4rem; text-align:left;">
+    · 记录 · 索引 · 不费力 ·
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://movyletis.github.io/homeapp-aiyouxi-com-cn/sitemap.xml
